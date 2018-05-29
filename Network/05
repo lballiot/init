@@ -1,0 +1,1 @@
+ping slash16.org -c 1 -q | awk '/slash16.org/{print $3}' | sed -e '2d' | cut -c 2-14
