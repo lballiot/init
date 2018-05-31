@@ -1,1 +1,3 @@
+#To modifie bc it's not the good answer
+
 ping slash16.org -c 1 -q | awk '/slash16.org/{print $3}' | sed -e '2d' | sed 's/^.//' | sed 's/)://'
