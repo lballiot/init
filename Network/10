@@ -1,5 +1,5 @@
-# Identifiez les différents appareils réseaux entre votre poste et le domaine slash16.org
+#Identifiez les différents appareils réseaux entre votre poste et le domaine slash16.org
 
 traceroute slash16.org
 
-# traceroute tracks the route packets taken from an IP network on my way to slash16.org
+#traceroute tracks the route packets taken from an IP network on my way to slash16.org

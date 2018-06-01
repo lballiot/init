@@ -1,0 +1,7 @@
+#Déterminez le type du serveur
+
+#nslookup 10.51.1.253 | grep "name" | awk '{printf $4}'
+
+#dhcp.42.fr.
+
+il s'agit d'un serveur DHCP

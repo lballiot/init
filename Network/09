@@ -1,8 +1,7 @@
+#Trouver l’IP Publique de 42.fr
 
-# Trouver l’IP Publique de 42.fr
-
-# nslookup 42.fr 8.8.8.8
-# 8.8.8.8 pour trouver l'adresse publique et non prive
+#8.8.8.8 to find the public address and not the private address
+#nslookup 42.fr 8.8.8.8
 
 Server:		8.8.8.8
 Address:	8.8.8.8#53

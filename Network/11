@@ -1,0 +1,9 @@
+#Trouvez grâce au résultat de la commande précédente le nom et l’IP du matériel
+#qui fait le lien entre vous (réseau local) et l’extérieur
+
+#le reseau local a une adresse IP commencant par 10. le reseau exterieur lui ne commence pas par 10.
+#NAT-1 est la dernier appareil connecte sur le reseau local c'est don lui qui fait la liaison
+
+NAT-1 (10.60.1.11)
+
+#traceroute slash16.org

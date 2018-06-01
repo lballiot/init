@@ -1,5 +1,5 @@
-# Trouver chez quel hébergeur est le site de Slash16
+#Trouver chez quel hébergeur est le site de Slash16
 
-# whois slash16.org | grep "Name Server"
+#whois slash16.org | grep "Name Server"
 
 Amazon.com
