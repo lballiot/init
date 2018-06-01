@@ -1,0 +1,8 @@
+#Faites pointer intra.42.fr sur l’adresse suivante 46.19.122.85
+
+#il faut avoir les droits root pour modifier le fichier /etc/hosts
+
+127.0.0.1       localhost
+255.255.255.255 broadcasthost
+::1             localhost
+#46.19.122.85	intra.42.fr
