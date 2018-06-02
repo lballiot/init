@@ -1,0 +1,5 @@
+#Donnez une commande pour redémarrer le service SSH
+
+#il faut etre connecte avec les droits root
+
+service sshd restart

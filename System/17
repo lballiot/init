@@ -1,0 +1,5 @@
+#Trouvez une commande qui donne la liste des règles de pare-feu
+
+sudo iptables -L
+
+#verifier si besoin sudo sur vm

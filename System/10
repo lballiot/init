@@ -1,0 +1,5 @@
+#Quelle commande permet de lister les tables de partitions des périphériques ?
+
+sudo fdisk -l
+
+#verifier si vm need sudo
