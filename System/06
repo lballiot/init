@@ -2,4 +2,4 @@
 
 #il faut etre connecte avec les droits root
 
-service sshd restart
+service ssh restart
