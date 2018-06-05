@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#apt-get upgrade && apt-get update > /var/log/update_script.log
+#modifier crontab pour add tache planifier
+# 0 4 * * 1 root "command"
