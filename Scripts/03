@@ -1,0 +1,5 @@
+#!/bin/bash
+
+ls -S $1
+
+#$1 is the arg1
