@@ -1,3 +1,5 @@
 #Donnez une commande qui détermine l’état du service SSH
 
-service ssh status
+sudo service ssh status
+
+#ou sudo su and service ssh status 

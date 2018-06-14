@@ -1,5 +1,3 @@
 #Quel fichier contient les clés RSA autorisées à se connecter via SSH ?
 
-~/.ssh/id_rsa
-
-#~/.ssh/key rsa
+~/.ssh/authorized_keys
