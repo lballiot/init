@@ -1,6 +1,8 @@
 #Déterminez le PID du service SSHD
 
-ps aux | grep -e /usr/sbin/sshd | tr -s " " | cut -d " " -f2
+ps aux | grep -e /usr/sbin/sshd | tr -s " " | cut -d " " -f2 | sed '2 d'
+
+#pidof sshd
 
 #ps : affiche les processus en cours d'execution
 #grep -e recherche le PATTERN specifie
@@ -8,4 +10,3 @@ ps aux | grep -e /usr/sbin/sshd | tr -s " " | cut -d " " -f2
 #cut -d delimite par le caractere donne 
 
 
-#pidof sshd

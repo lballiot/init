@@ -1,9 +1,8 @@
 #Trouvez une commande qui permet de trouver les processus en cours d’exécution
 
-ps aux
+top
 
-#ou top
-
+#ou ps aux
 #a : montre les processus pour chaque utilisateur
 #u : affiche le proprietaire du processus
 #x : montre les processus non relie au terminal
