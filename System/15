@@ -1,8 +1,6 @@
 #Trouvez une commande qui permet de tuer le processus de la commande en background
 
-killall tail
+pkill -f "tail -f /var/log/syslog"
 
-#killall : pour kill avec le nom de la commande
+#-f : le nom entier de la commande
 #kill : avec le PID 
-
-#pkill
