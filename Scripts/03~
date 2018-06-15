@@ -2,5 +2,4 @@
 
 ls -S $1
 
-#usage : ./03 DIRECTORY
 #$1 is the arg1
