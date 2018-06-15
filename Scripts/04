@@ -1,0 +1,13 @@
+#!/bin/bash
+
+LAST_MODIF= md5sum toto
+if [ toto_old ]; then
+	LAST_MODIF= md5sum toto_old
+fi
+FILE= md5sum toto
+cp toto toto_old
+if [ "$LAST_MODIF" == "$FILE" ]; then
+	echo "C'est vrai"
+fi
+echo $LAST_MODIF
+echo $FILE

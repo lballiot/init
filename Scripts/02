@@ -1,5 +1,5 @@
 #!/bin/bash
 
-#apt-get upgrade && apt-get update > /var/log/update_script.log
-#modifier crontab pour add tache planifier
-# 0 4 * * 1 root "command"
+# NEED TO BE ROOT : sudo su
+
+crontab <<(echo "0 4 * * 1 apt-get upgrade -y >> /var/log/update_script.log && apt-get update -y >> /var/log/update_script.log")
