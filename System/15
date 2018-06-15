@@ -4,3 +4,5 @@ killall tail
 
 #killall : pour kill avec le nom de la commande
 #kill : avec le PID 
+
+#pkill
