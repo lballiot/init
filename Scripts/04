@@ -1,13 +1,18 @@
-#!/bin/bash
+#! /bin/bash
 
-LAST_MODIF= md5sum toto
-if [ toto_old ]; then
-	LAST_MODIF= md5sum toto_old
+if [[ -f toto_old ]]
+then
+    FIRST_MODIF=`md5sum -q toto_old`
+else
+    FIRST_MODIF=`md5sum -q toto`
 fi
-FILE= md5sum toto
+
+FILE=`md5sum -q toto`
 cp toto toto_old
-if [ "$LAST_MODIF" == "$FILE" ]; then
-	echo "C'est vrai"
+
+if [[ $FIRST_MODIF == $FILE ]]
+then
+    echo "bitch"
 fi
-echo $LAST_MODIF
+echo $FIRST_MODIF
 echo $FILE
