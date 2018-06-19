@@ -2,4 +2,4 @@
 
 # NEED TO BE ROOT : sudo su
 
-crontab <<(echo "0 4 * * 1 apt-get upgrade -y >> /var/log/update_script.log && apt-get update -y >> /var/log/update_script.log")
+echo '0 4 * * 1 root apt-get upgrade -y >> /var/log/update_script.log && apt-get update -y >> /var/log/update_script.log' | crontabOB

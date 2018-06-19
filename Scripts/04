@@ -1,18 +1,25 @@
 #! /bin/bash
 
-if [[ -f toto_old ]]
+# NEED TO BE ROOT : sudo su
+
+if [[ -f /etc/crontab_old ]]
 then
-    FIRST_MODIF=`md5sum -q toto_old`
-else
-    FIRST_MODIF=`md5sum -q toto`
+    FIRST_MODIF=`md5sum --text /etc/crontab_old | awk '{print $1}'`
+elif [[ -f /etc/crontab ]]
+then
+   FIRST_MODIF=`md5sum --text /etc/crontab | awk '{print $1}'`
 fi
 
-FILE=`md5sum -q toto`
-cp toto toto_old
-
-if [[ $FIRST_MODIF == $FILE ]]
+if [[ -f /etc/crontab ]]
 then
-    echo "bitch"
+    FILE="`md5sum --text /etc/crontab | awk '{print $1}'`"
+    cp /etc/crontab /etc/crontab_old
 fi
-echo $FIRST_MODIF
-echo $FILE
+
+if [[ $FIRST_MODIF != $FILE ]]
+then
+    echo "/etc/crontab has been modified" | mail root
+fi
+
+#add crontab :
+#echo '0 0 * * * root ./04' | crontab
